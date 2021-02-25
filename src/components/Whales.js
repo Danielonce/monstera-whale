@@ -77,7 +77,6 @@ const Whales = () => {
                         </Info>
 
                     </WhaleLine>
-
                 )
                 }
                 

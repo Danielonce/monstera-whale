@@ -6,8 +6,7 @@ const Title = styled.h2`
     color: #EFF2F5;
     text-align: center;
     padding: .8rem;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 0 25% 0 25%;
     border-radius: 10px;
 `;
 

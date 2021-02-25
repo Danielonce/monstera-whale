@@ -5,10 +5,8 @@ import axios from 'axios';
 import Titles from '../components/Titles'
 
 export const FlexContainer = styled.div`
-    height: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 `;

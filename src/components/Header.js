@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from '@emotion/styled';
 import monsteraimagen from '../monstera_imagen.png'
+import Buttons from '../components/Buttons'
 
 const MainHeader = styled.header`
     height: 5rem;
@@ -61,7 +62,7 @@ const Header = () => {
                 </PicContainer>
 
                 <Title>Monstera Movement</Title>
-
+                <Buttons />
             </SubHeader>
         </MainHeader>
         </Fragment>

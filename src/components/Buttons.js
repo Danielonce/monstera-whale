@@ -6,8 +6,8 @@ import currencies from '../assets/currencies.png';
 
 const Container = styled.div`
     height: 3rem;
-    width: 100vw;
-    display: block;
+    float: right;
+    background-color: #000;
 `;
 
 const Img = styled.img`
@@ -15,8 +15,12 @@ const Img = styled.img`
     width: 3rem;
     border-radius: 50%;
     border: 2px solid black;
-    margin: 0 .5rem 0 .5rem;
+    margin: 1rem .5rem 0 .5rem;
     float: right;
+    @media screen and (max-width: 450px){
+        margin: 2.3rem .5rem 0 .5rem;
+    }
+
 `;
 
 
