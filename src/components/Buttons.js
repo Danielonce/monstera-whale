@@ -4,6 +4,12 @@ import styled from '@emotion/styled';
 import whale from '../assets/whale.png'
 import currencies from '../assets/currencies.png';
 
+const Container = styled.div`
+    height: 3rem;
+    width: 100vw;
+    display: block;
+`;
+
 const Img = styled.img`
     height: 3rem;
     width: 3rem;
@@ -16,10 +22,10 @@ const Img = styled.img`
 
 const Buttons = () => {
     return ( 
-        <div>
+        <Container>
             <Link to={'/whales'}><Img src={whale} alt='meaningful text'/></Link>
             <Link to={'/'}><Img src={currencies} alt='meaningful text' /></Link>
-        </div>
+        </Container>
     )
 }
 

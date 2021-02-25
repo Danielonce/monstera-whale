@@ -14,7 +14,7 @@ function App() {
       <Header />
 
       <Router>
-        <Buttons></Buttons>  
+        <Buttons /> 
         <Switch>
           <Route exact path="/" component={ShowCards} />
           <Route exact path="/whales" component={Whales} />
