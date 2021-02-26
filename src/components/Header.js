@@ -6,14 +6,14 @@ import Buttons from '../components/Buttons'
 const MainHeader = styled.header`
     height: 5rem;
     width: 100vw;
-    background-color: #000000;
+    background-color: #159E49;
     position: fixed;
     margin-top: -7rem;
 `;
 
 const SubHeader = styled.div`
     height: 3rem;
-    background-color: #000000;
+    background-color: #313131;
     margin-top: 2rem;
     position: relative;
 `;
@@ -43,7 +43,7 @@ const Title = styled.h2`
     color: #FFF;
     display: inline-block;
     position: absolute;
-    background-color: #000;
+    background-color: #313131;
     left: 7rem;
     font-size: 1.3rem;
     top: .7rem;

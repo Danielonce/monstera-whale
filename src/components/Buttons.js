@@ -7,7 +7,7 @@ import currencies from '../assets/currencies.png';
 const Container = styled.div`
     height: 3rem;
     float: right;
-    background-color: #000;
+    background-color: #313131;
 `;
 
 const Img = styled.img`
