@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Timestamp from 'react-timestamp';
 import {FlexContainer} from '../components/ShowCards'
 import Titles from './Titles';
+import whale from '../assets/whale.png'
 
 const WhaleLine = styled.div`
     display: flex;
@@ -51,7 +52,7 @@ const Whales = () => {
 
         <FlexContainer>
 
-            <Titles text={'Last 11 whale transactions'} />
+            <Titles text={'Whale transactions'} image={whale}/>
 
             {moveList.slice(0).reverse().map( (move, i) => {
                 

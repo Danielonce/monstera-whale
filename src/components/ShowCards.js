@@ -1,8 +1,9 @@
-import React, {Fragment, useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react';
 import styled from '@emotion/styled';
-import useCard from '../hooks/useCard'
+import useCard from '../hooks/useCard';
 import axios from 'axios';
-import Titles from '../components/Titles'
+import Titles from '../components/Titles';
+import currencies from '../assets/currencies.png';
 
 export const FlexContainer = styled.div`
     display: flex;
@@ -28,12 +29,10 @@ const ShowCards = () => {
     
 
     return (
-        <Fragment>
-            <Titles text={'Top currencies'} />
             <FlexContainer>
+                <Titles text={'Top currencies'} image={currencies}/>
                 <SetCard />
             </FlexContainer>
-        </Fragment>
     );
 }
 

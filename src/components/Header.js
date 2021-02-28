@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
 import styled from '@emotion/styled';
-import monsteraimagen from '../monstera_imagen.png'
-import Buttons from '../components/Buttons'
+import monsteraimagen from '../monstera_imagen.png';
+import Options from './Options';
+import Burger from '../components/Burger';
+import Media from 'react-media';
 
 const MainHeader = styled.header`
     height: 5rem;
@@ -44,12 +46,16 @@ const Title = styled.h2`
     display: inline-block;
     position: absolute;
     background-color: #313131;
-    left: 7rem;
+    left: 7.1rem;
     font-size: 1.3rem;
-    top: .7rem;
+    top: .8rem;
+    @media screen and (max-width: 470px){
+        font-size: 1rem;
+    }
 `;
 
 const Header = () => {
+
     return (
         <Fragment>
         <MainHeader>
@@ -62,7 +68,23 @@ const Header = () => {
                 </PicContainer>
 
                 <Title>Monstera Movement</Title>
-                <Buttons />
+
+                <Media queries={{
+                    small: "(max-width: 767px)",
+                    large: "(min-width: 768px)"
+                }}>
+                
+                {matches => (
+                
+                    <Fragment>
+                        {matches.small && <Burger/>}
+                        {matches.large && <Options/>}
+                    </Fragment>
+                
+                )}
+
+                </Media>
+
             </SubHeader>
         </MainHeader>
         </Fragment>

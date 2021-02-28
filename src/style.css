@@ -25,3 +25,15 @@ h4{
     font-weight: 500;
     background-color: #EFF2F5;
 }
+
+.burgerContainer {
+    background-color: #313131;
+    float: right;
+    margin: .5rem .5rem 0 0;
+    border: none;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #000;
+}
