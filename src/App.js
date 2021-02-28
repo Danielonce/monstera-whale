@@ -10,13 +10,12 @@ function App() {
   return (
     <Fragment>
       
-
       <Router>
-      <Header />
-        <Switch>
-          <Route exact path="/" component={ShowCards} />
-          <Route exact path="/whales" component={Whales} />
-        </Switch>
+        <Header/>
+          <Switch>
+            <Route exact path="/" component={ShowCards} />
+            <Route exact path="/whales" component={Whales} />
+          </Switch>
       </Router> 
       
     </Fragment>
